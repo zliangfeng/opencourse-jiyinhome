@@ -1,0 +1,39 @@
+@import "../variable.scss";
+
+.layer-course {
+    padding: $margin_h $margin_v $margin_v $margin_v;
+    .title {
+        padding: 15px 0;
+        &>div:first-child {
+            padding: 0;
+            font-size: 1.6rem;
+        }
+        &>div:last-child {
+            padding: 0;
+            text-align: right;
+            button {
+                padding: 0;
+                color: #8e8e8e;
+                font-size: 1.3rem;
+                svg {
+                    color: #8e8e8e;
+                }
+            }
+        }
+    }
+    .content {
+        overflow-x: scroll;
+        & >div {
+            min-width: 400%;
+
+            div {
+                width: 120px;
+                float: left;
+                margin-right: 5px;
+                img {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}

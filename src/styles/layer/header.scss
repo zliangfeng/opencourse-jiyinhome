@@ -1,0 +1,52 @@
+@import "../variable.scss";
+
+.layer-header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: .8rem 1rem;
+
+    &.row [class^="col-"], &.row [class*="col-"]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &.sticky {
+        background-color: #fff;
+        
+        .mark-zone {
+            display: flex;
+            justify-content: space-around;
+            button {
+                color: grey;
+                font-size: 1.4rem;
+                &.hit {
+                    font-size: 1.6rem;
+                    color: $color_primary;
+                }
+            }
+        }
+
+        button {
+            color: black;
+            background-color: transparent;
+            font-size: 1.6rem;
+            padding: 0;
+        }
+    }
+
+    button {
+        color: #fff;
+        background-color: #f4f8f88a;
+        border-radius: 1.5rem;
+        border: none;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+#dropdown-more-category {
+    height: 100%;
+}

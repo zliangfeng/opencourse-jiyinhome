@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "genepro-wx",
+  "name": "基因家-微信公众号-websvr",
   "icons": [
     {
       "src": "favicon.ico",
